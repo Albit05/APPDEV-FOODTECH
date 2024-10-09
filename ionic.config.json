@@ -1,0 +1,7 @@
+{
+  "name": "APPDEV_FOODTECH",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
