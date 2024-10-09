@@ -1,0 +1,122 @@
+/* General ion-content styling */
+ion-content {
+    --background: #001F3F;
+    padding: 16px; /* Standard padding */
+    font-family: Arial, sans-serif; /* Clean font */
+    height: 100%; /* Ensure full height usage */
+    display: flex; /* Flex for better alignment */
+    flex-direction: column; /* Column layout for the content */
+  }
+  
+  /* Custom tab styling */
+  .custom-tab {
+    background-color: #001F3F;
+  }
+  
+  /* Welcome message styling */
+  .welcome-message {
+    font-size: 1em; /* Standard size */
+    color: white; /* Light text for contrast */
+    margin: 10px 0; /* Spacing around */
+  }
+  
+  /* List and item styling */
+  ion-list {
+    padding: 0; /* No extra padding */
+  }
+  
+  ion-item {
+    padding: 10px; /* Standard padding */
+    border-bottom: 1px solid #ccc; /* Light border for separation */
+  }
+  
+  ion-item:last-child {
+    border-bottom: none; /* Remove border for the last item */
+  }
+  
+  ion-label {
+    font-size: 1em; /* Standard label size */
+  }
+  
+  ion-icon {
+    color: #007bff; /* Blue color for icons */
+  }
+  
+  /* Transaction list styling */
+  .transaction-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Custom card-style items */
+  .custom-item {
+    margin: 10px; /* Adjust spacing between cards */
+    border-radius: 10px; /* Adds rounded corners */
+    width: 230px;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Table header styling */
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Table container to allow scrolling */
+  .table-container {
+    flex: 1; /* Makes the table container take up available space */
+    max-height: 100%; /* Allow full height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  /* Full width and collapsing borders for table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px; /* Padding for better readability */
+    text-align: left; /* Align text to the left */
+    border: 1px solid #ccc; /* Light borders for the table */
+  }
+  
+  /* Sticky first column */
+  th:first-child, td:first-child {
+    position: sticky; /* Make first column sticky */
+    left: 0; /* Keep it aligned left */
+    background-color: #001F3F; /* Matches the background */
+    z-index: 1; /* Ensure it stays above other elements */
+  }
+  
+  /* Sticky header */
+  thead th {
+    position: sticky; /* Make header sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 2; /* Ensure it's on top of the body rows */
+    background-color: #EAD8B1; /* Lighter background for headers */
+  }
+  
+  /* Responsive table adjustment */
+  @media (max-width: 768px) {
+    th, td {
+      padding: 6px; /* Reduce padding on smaller screens */
+      font-size: 0.9em; /* Adjust font size for better fit */
+    }
+  
+    .custom-item {
+      width: 100%; /* Make items fill the width on smaller screens */
+      margin: 5px 0; /* Reduce margins */
+    }
+  }

@@ -1,0 +1,107 @@
+<ion-tabs>
+ 
+  <ion-tab tab="Customers">
+    <ion-header class="ion-text-center">
+      <h6 class="welcome-message">Customer Orders</h6>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item *ngFor="let order of orders; let i = index">
+          <ion-avatar aria-hidden="true" slot="start">
+            <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </ion-avatar>
+          <ion-label>{{ order.customerNumber }}</ion-label>
+  
+          <!-- Eye icon -->
+          <ion-button fill="clear" slot="end">
+            <ion-icon color="warning" slot="icon-only" name="eye"></ion-icon>
+          </ion-button>
+  
+          <!-- Trash icon -->
+          <ion-button fill="clear" slot="end" color="danger" (click)="deleteOrder(i)">
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-tab>
+  
+
+  <ion-tab tab="Transactions">
+    <ion-content>
+      <ion-list>
+        <ion-item *ngFor="let order of orders">
+          <ion-label>
+            <h2>{{ order.customerNumber }}</h2>
+            <p *ngFor="let item of order.items">
+              {{ item.name }} - ${{ item.price }} x {{ item.quantity }}
+            </p>
+          <ion-label>Approved </ion-label> 
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-tab>
+  
+
+
+  <ion-tab tab="Orders">
+
+  
+    <ion-content>
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th><h6 style="color: black;">Customers</h6></th> <!-- Update the column header to reflect just the number -->
+              <th><h6 style="color: black;">FT-Name</h6></th>
+              <th><h6 style="color: black;">Price</h6></th>
+              <th><h6 style="color: black;">Quantity</h6></th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let order of orders; let i = index">
+              <tr>
+                <td [attr.rowspan]="order.items.length"><h6>#{{ i + 1 }}</h6></td>
+                <td><h6>{{ order.items[0].name }}</h6></td>
+                <td><h6>{{ order.items[0].price | currency }}</h6></td>
+                <td><h6>{{ order.items[0].quantity }}</h6></td>
+              </tr>
+              <tr *ngFor="let item of order.items.slice(1)">
+                <td><h6>{{ item.name }}</h6></td>
+                <td><h6>{{ item.price | currency }}</h6></td>
+                <td><h6>{{ item.quantity }}</h6></td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </ion-content>
+  </ion-tab>
+  
+  
+  
+
+<ion-tab-bar slot="bottom" class="custom-tab-bar">
+  <ion-tab-button tab="Customers">
+    <ion-icon color="primary" name="people"></ion-icon>
+    <span>Customers</span>
+  </ion-tab-button>
+
+  <ion-tab-button tab="Transactions">
+    <ion-icon color="secondary" name="card"></ion-icon>
+    <span>Transactions</span>
+  </ion-tab-button>
+
+  <ion-tab-button tab="Orders">
+    <ion-icon color="tertiary" name="cart"></ion-icon>
+    <span>Orders</span>
+  </ion-tab-button>
+  
+  <ion-tab-button [routerLink]="['/admin-customer']">
+    <ion-icon color="danger" name="log-out"></ion-icon>
+    <span>Logout</span>
+  </ion-tab-button>
+</ion-tab-bar>
+
+</ion-tabs>

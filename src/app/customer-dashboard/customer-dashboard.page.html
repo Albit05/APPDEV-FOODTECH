@@ -1,0 +1,1508 @@
+<ion-tabs>
+
+  <!--Combo Tab-->
+  <ion-tab tab="combo-tab">
+   
+   <ion-content>
+ 
+ 
+     <div class="button-container">
+       <ion-tab-button 
+         class="combo underline" 
+         [ngClass]="{'underline': selectedButton === 'single'}" 
+         (click)="selectButton('combo')">
+         Combo
+       </ion-tab-button>
+ 
+       <ion-tab-button 
+         class="single underline" 
+         [ngClass]="{'underline': selectedButton === 'combo'}" 
+         (click)="selectButton('single')"
+         tab="single-tab">
+         Single
+       </ion-tab-button>
+     </div>
+ 
+     <ion-grid>
+       <ion-row>
+         <ion-col>
+ 
+           <ion-card>
+             <ion-tab-button tab="FT1">
+               <img class="FT1-pic" alt="Silhouette of mountains" src="/assets/images/FT1.png" />
+             </ion-tab-button>
+             <ion-card-header>
+               <ion-card-subtitle class="ion-text-center"><h6><b>FT1 Combo!</b></h6></ion-card-subtitle>
+               <ion-card-title class="ion-text-center"><h4>$149.00</h4></ion-card-title>
+             </ion-card-header>
+           </ion-card>
+ 
+         </ion-col>
+ 
+         <ion-col>
+     
+           <ion-card class="FT2-card">
+             <ion-tab-button tab="FT2">
+               <img class="FT2-pic" alt="Silhouette of mountains" src="/assets/images/FT2.png" />
+             </ion-tab-button>
+             <ion-card-header>
+             
+               <ion-card-subtitle class="ion-text-center"><h6><b>FT2 Combo!</b></h6></ion-card-subtitle>
+             
+               <ion-card-title class="ion-text-center"><h4>$249.00</h4></ion-card-title>
+             </ion-card-header>
+           </ion-card>
+ 
+         </ion-col>
+ 
+ 
+ 
+         <ion-col>
+     
+           <ion-card>
+             <ion-tab-button tab="FT3">
+               <img class="FT3-pic" alt="Silhouette of mountains" src="/assets/images/FT3.png" />
+             </ion-tab-button>
+             <ion-card-header>
+               <ion-card-subtitle class="ion-text-center"><h6><b>FT3 Combo!</b></h6></ion-card-subtitle>
+               <ion-card-title class="ion-text-center"><h4>$349.00</h4></ion-card-title>
+             </ion-card-header>
+           </ion-card>
+ 
+         </ion-col>
+ 
+ 
+         
+         <ion-col>
+     
+           <ion-card>
+             <ion-tab-button tab="FT4">
+               <img class="FT4-pic" alt="Silhouette of mountains" src="/assets/images/FT4.png" />
+             </ion-tab-button>
+             <ion-card-header>
+               <ion-card-subtitle class="ion-text-center"><h6><b>FT4 Combo!</b></h6></ion-card-subtitle>
+               <ion-card-title class="ion-text-center"><h4>$449.00</h4></ion-card-title>
+             </ion-card-header>
+           </ion-card>
+ 
+         </ion-col>
+ 
+         
+         <ion-col>
+     
+           <ion-card>
+             <ion-tab-button tab="FT5">
+               <img class="FT5-pic" alt="Silhouette of mountains" src="/assets/images/FT5.png" />
+             </ion-tab-button>
+             <ion-card-header>
+               <ion-card-subtitle class="ion-text-center"><h6><b>FT5 Combo!</b></h6></ion-card-subtitle>
+               <ion-card-title class="ion-text-center"><h4>$549.00</h4></ion-card-title>
+             </ion-card-header>
+           </ion-card>
+ 
+         </ion-col>
+ 
+ 
+         
+         <ion-col>
+     
+           <ion-card>
+             <ion-tab-button tab="FT6">
+               <img class="FT6-pic" alt="Silhouette of mountains" src="/assets/images/FT6.png" />
+             </ion-tab-button>
+             <ion-card-header>
+               <ion-card-subtitle class="ion-text-center"><h6><b>FT6 Combo!</b></h6></ion-card-subtitle>
+               <ion-card-title class="ion-text-center"><h4>$649.00</h4></ion-card-title>
+             </ion-card-header>
+           </ion-card>
+ 
+         </ion-col>
+ 
+ 
+       </ion-row>
+     </ion-grid>
+   </ion-content>
+ </ion-tab>
+  <!--Combo Tab-->
+ 
+ <!--Single Tab-->
+   <ion-tab tab="single-tab">
+  
+     <ion-content>
+ 
+       <div class="button-container">
+         <ion-tab-button 
+           class="combo underline" 
+           [ngClass]="{'underline': selectedButton === 'combo'}" 
+           (click)="selectButton('combo')"
+           tab="combo-tab">
+           Combo
+         </ion-tab-button>
+   
+         <ion-tab-button 
+           class="single underline1" 
+           [ngClass]="{'underline': selectedButton === 'single'}" 
+           (click)="selectButton('single')"
+           tab="single-tab">
+           Single
+         </ion-tab-button>
+       </div>
+ 
+       <ion-grid>
+         <ion-row>
+           <ion-col>
+ 
+             <ion-card>
+               <ion-tab-button tab="FT7">
+                 <img alt="Silhouette of mountains" src="/assets/images/FT7.png" />
+               </ion-tab-button>
+               <ion-card-header>
+                 <ion-card-subtitle class="ion-text-center"><h6><b>FT7 Single!</b></h6></ion-card-subtitle>
+                 <ion-card-title class="ion-text-center"><h4>$749.00</h4></ion-card-title>
+               </ion-card-header>
+             </ion-card>
+ 
+           </ion-col>
+ 
+           <ion-col>
+       
+             <ion-card>
+               <ion-tab-button tab="FT8">
+                 <img class="FT8-pic" alt="Silhouette of mountains" src="/assets/images/FT8.png" />
+               </ion-tab-button>
+               <ion-card-header>
+                 <ion-card-subtitle class="ion-text-center"><h6><b>FT8 Single!</b></h6></ion-card-subtitle>
+                 <ion-card-title class="ion-text-center"><h4>$849.00</h4></ion-card-title>
+               </ion-card-header>
+             </ion-card>
+ 
+           </ion-col>
+ 
+ 
+ 
+           <ion-col>
+       
+             <ion-card>
+               <ion-tab-button tab="FT9">
+                 <img class="FT9-pic" alt="Silhouette of mountains" src="/assets/images/FT9.png" />
+               </ion-tab-button>
+               <ion-card-header>
+                 <ion-card-subtitle class="ion-text-center"><h6><b>FT9 Single!</b></h6></ion-card-subtitle>
+                 <ion-card-title class="ion-text-center"><h4>$949.00</h4></ion-card-title>
+               </ion-card-header>
+             </ion-card>
+ 
+           </ion-col>
+ 
+ 
+           
+           <ion-col>
+       
+             <ion-card>
+               <ion-tab-button tab="FT10">
+                 <img class="FT10-pic" alt="Silhouette of mountains" src="/assets/images/FT10.png" />
+               </ion-tab-button>
+               <ion-card-header>
+                 <ion-card-subtitle class="ion-text-center"><h6><b>FT10 Single!</b></h6></ion-card-subtitle>
+                 <ion-card-title class="ion-text-center"><h4>$1049.00</h4></ion-card-title>
+               </ion-card-header>
+             </ion-card>
+ 
+           </ion-col>
+ 
+           
+           <ion-col>
+       
+             <ion-card>
+               <ion-tab-button tab="FT11">
+                 <img alt="Silhouette of mountains" src="/assets/images/FT11.png" />
+               </ion-tab-button>
+               <ion-card-header>
+                 <ion-card-subtitle class="ion-text-center"><h6><b>FT11 Single!</b></h6></ion-card-subtitle>
+                 <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+               </ion-card-header>
+             </ion-card>
+ 
+           </ion-col>
+ 
+ 
+           
+         <ion-col>
+ 
+         </ion-col>
+ 
+ 
+         </ion-row>
+       </ion-grid>
+     </ion-content>
+   </ion-tab>
+   <!-- Single TaB-->
+ 
+ 
+   <!--Full Description for FT1 Food-->
+   <ion-tab tab="FT1">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="combo-tab" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img alt="Silhouette of mountains" src="/assets/images/FT1.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h1><b>FT1</b></h1></ion-card-subtitle>
+           <h4 class="ion-text-center">Double Cheeseburger Hamburger Menü mit Pommes Frites</h4>
+           <ion-card-title class="ion-text-center"><h4>$149.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[0]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(0)" [disabled]="quantities[0] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(0)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT1 Combo!', 0)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+   <!--Full Description for FT2 Food-->
+   <ion-tab tab="FT2">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="combo-tab" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img alt="Silhouette of mountains" src="/assets/images/FT2.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h1><b>FT2</b></h1></ion-card-subtitle>
+           <h4 class="ion-text-center">
+             Combo meal with a burger, fries, chicken nuggets, and soda,</h4>
+           <ion-card-title class="ion-text-center"><h4>$249.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[1]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(1)" [disabled]="quantities[1] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(1)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT2 Combo!', 1)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+   <!--Full Description for FT3 Food-->
+   <ion-tab tab="FT3">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="combo-tab" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img alt="Silhouette of mountains" src="/assets/images/FT3.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h1><b>FT3</b></h1></ion-card-subtitle>
+           <h4 class="ion-text-center">Breaded Fried Chicken Tenders Bucket with 4 nestea</h4>
+           <ion-card-title class="ion-text-center"><h4>$349.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[2]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(2)" [disabled]="quantities[2] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(2)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT3 Combo!', 2)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+ 
+   <!--Full Description for FT4 Food-->
+   <ion-tab tab="FT4">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="combo-tab" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img alt="Silhouette of mountains" src="/assets/images/FT4.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h1><b>FT4</b></h1></ion-card-subtitle>
+           <h4 class="ion-text-center">Burgers, Fries, Nuggets, and Fizzy Drinks</h4>
+           <ion-card-title class="ion-text-center"><h4>$449.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[3]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(3)" [disabled]="quantities[3] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(3)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT4 Combo!', 3)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+ 
+   <!--Full Description for FT5 Food-->
+   <ion-tab tab="FT5">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="combo-tab" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img alt="Silhouette of mountains" src="/assets/images/FT5.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h1><b>FT5</b></h1></ion-card-subtitle>
+           <h4 class="ion-text-center">Chickens buckets and combos, Snacks with delicious sauces</h4>
+           <ion-card-title class="ion-text-center"><h4>$549.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[4]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(4)" [disabled]="quantities[4] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(4)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT5 Combo!', 4)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+ 
+   <!--Full Description for FT6 Food-->
+   <ion-tab tab="FT6">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="combo-tab" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img alt="Silhouette of mountains" src="/assets/images/FT6.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h1><b>FT6</b></h1></ion-card-subtitle>
+           <h4 class="ion-text-center">Chicken with Spaghetti and cold drinks</h4>
+           <ion-card-title class="ion-text-center"><h4>$649.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[5]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(5)" [disabled]="quantities[5] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(5)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT6 Combo!',5)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+ 
+ 
+   <!--Full Description for FT7 Food-->
+   <ion-tab tab="FT7">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="single-tab" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img alt="Silhouette of mountains" src="/assets/images/FT7.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h1><b>FT7</b></h1></ion-card-subtitle>
+           <h4 class="ion-text-center">Fries with hot sauce</h4>
+           <ion-card-title class="ion-text-center"><h4>$749.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[6]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(6)" [disabled]="quantities[6] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(6)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT7 Single!', 6)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+ 
+   <!--Full Description for FT8 Food-->
+   <ion-tab tab="FT8">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="single-tab" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img alt="Silhouette of mountains" src="/assets/images/FT8.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h1><b>FT8</b></h1></ion-card-subtitle>
+           <h4 class="ion-text-center">Spaghetti with yummy saucy!</h4>
+           <ion-card-title class="ion-text-center"><h4>$849.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[7]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(7)" [disabled]="quantities[7] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(7)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT8 Single!', 7)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+    <!--Full Description for FT9 Food-->
+    <ion-tab tab="FT9">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="single-tab" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img alt="Silhouette of mountains" src="/assets/images/FT9.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h4>FT9</h4></ion-card-subtitle>
+           <h4 class="ion-text-center">Chicken Nuggets</h4>
+           <ion-card-title class="ion-text-center"><h4>$949.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[8]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(8)" [disabled]="quantities[8] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(8)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT9 Single!', 8)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+ 
+   <!--Full Description for FT10 Food-->
+   <ion-tab tab="FT10">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="single-tab" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img alt="Silhouette of mountains" src="/assets/images/FT10.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h4>FT10</h4></ion-card-subtitle>
+           <h4 class="ion-text-center">Burger</h4>
+           <ion-card-title class="ion-text-center"><h4>$1049.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[9]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(9)" [disabled]="quantities[9] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(9)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT10 Single!', 9)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+ 
+ 
+   <!--Full Description for FT11 Food-->
+   <ion-tab tab="FT11">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="single-tab" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img alt="Silhouette of mountains" src="/assets/images/FT11.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h4>FT11</h4></ion-card-subtitle>
+           <h4 class="ion-text-center">Fried Chicken</h4>
+           <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[10]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(10)" [disabled]="quantities[10] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(10)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT11 Single!', 10)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+ 
+ 
+   <!--Full Description for FT12 Food-->
+   <ion-tab tab="FT12">
+     <ion-header>
+       <ion-toolbar>
+         <ion-title><ion-tab-button  tab="Drinks" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+       </ion-toolbar>
+     </ion-header>
+ 
+     <ion-content>
+       <ion-card>
+ 
+         <ion-tab-button>
+           <img class="Drink" alt="Silhouette of mountains" src="/assets/images/FT12.png" />
+         </ion-tab-button>
+        
+         <ion-card-header>
+           <ion-card-subtitle class="ion-text-center"><h1><b>FT12</b></h1></ion-card-subtitle>
+           <h4 class="ion-text-center">Iced Tea with Tea Leaves</h4>
+           <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+         </ion-card-header>
+ <br>
+         <ion-card-content>
+           <div class="quantity-container">
+             <ion-label><h1>Quantity:</h1></ion-label>
+             <span class="quantity-display"><h1>{{quantities[11]}}</h1></span>
+             <div class="quantity-buttons">
+               <ion-button  fill="clear" (click)="decreaseQuantity(11)" [disabled]="quantities[11] === 0" class="icon-button">
+                 <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+               </ion-button>
+               <ion-button fill="clear" (click)="increaseQuantity(11)" class="icon-button">
+                 <ion-icon name="add-circle-outline" size="large"></ion-icon>
+               </ion-button>
+             </div>
+           </div>
+ <br>
+ <ion-button class="add" (click)="addToOrderList('FT12 Drink!', 11)">
+   <h3>Add</h3>
+ </ion-button>
+ 
+         </ion-card-content>
+       </ion-card>
+     </ion-content>
+   </ion-tab>
+ 
+     <!--Full Description for FT13 Food-->
+     <ion-tab tab="FT13">
+       <ion-header>
+         <ion-toolbar>
+           <ion-title><ion-tab-button  tab="Drinks" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+         </ion-toolbar>
+       </ion-header>
+   
+       <ion-content>
+         <ion-card>
+   
+           <ion-tab-button>
+             <img class="Drink" alt="Silhouette of mountains" src="/assets/images/FT13.png" />
+           </ion-tab-button>
+          
+           <ion-card-header>
+             <ion-card-subtitle class="ion-text-center"><h1><b>FT13</b></h1></ion-card-subtitle>
+             <h4 class="ion-text-center">Coca Cola with full of Ice</h4>
+             <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+           </ion-card-header>
+   <br>
+           <ion-card-content>
+             <div class="quantity-container">
+               <ion-label><h1>Quantity:</h1></ion-label>
+               <span class="quantity-display"><h1>{{quantities[12]}}</h1></span>
+               <div class="quantity-buttons">
+                 <ion-button  fill="clear" (click)="decreaseQuantity(12)" [disabled]="quantities[12] === 0" class="icon-button">
+                   <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+                 <ion-button fill="clear" (click)="increaseQuantity(12)" class="icon-button">
+                   <ion-icon name="add-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+               </div>
+             </div>
+   <br>
+   <ion-button class="add" (click)="addToOrderList('FT13 Drink!', 12)">
+     <h3>Add</h3>
+   </ion-button>
+   
+           </ion-card-content>
+         </ion-card>
+       </ion-content>
+     </ion-tab>
+ 
+ 
+      <!--Full Description for FT14 Food-->
+      <ion-tab tab="FT14">
+       <ion-header>
+         <ion-toolbar>
+           <ion-title><ion-tab-button  tab="Drinks" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+         </ion-toolbar>
+       </ion-header>
+   
+       <ion-content>
+         <ion-card>
+   
+           <ion-tab-button>
+             <img class="Drink" alt="Silhouette of mountains" src="/assets/images/FT14.png" />
+           </ion-tab-button>
+          
+           <ion-card-header>
+             <ion-card-subtitle class="ion-text-center"><h1><b>FT14</b></h1></ion-card-subtitle>
+             <h4 class="ion-text-center">Coca Cola with full of Ice</h4>
+             <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+           </ion-card-header>
+   <br>
+           <ion-card-content>
+             <div class="quantity-container">
+               <ion-label><h1>Quantity:</h1></ion-label>
+               <span class="quantity-display"><h1>{{quantities[13]}}</h1></span>
+               <div class="quantity-buttons">
+                 <ion-button  fill="clear" (click)="decreaseQuantity(13)" [disabled]="quantities[13] === 0" class="icon-button">
+                   <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+                 <ion-button fill="clear" (click)="increaseQuantity(13)" class="icon-button">
+                   <ion-icon name="add-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+               </div>
+             </div>
+   <br>
+   <ion-button class="add" (click)="addToOrderList('FT14 Drink!', 13)">
+     <h3>Add</h3>
+   </ion-button>
+   
+           </ion-card-content>
+         </ion-card>
+       </ion-content>
+     </ion-tab>
+ 
+      <!--Full Description for FT14 Food-->
+      <ion-tab tab="FT14">
+       <ion-header>
+         <ion-toolbar>
+           <ion-title><ion-tab-button  tab="Drinks" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+         </ion-toolbar>
+       </ion-header>
+   
+       <ion-content>
+         <ion-card>
+   
+           <ion-tab-button>
+             <img class="Drink" alt="Silhouette of mountains" src="/assets/images/FT14.png" />
+           </ion-tab-button>
+          
+           <ion-card-header>
+             <ion-card-subtitle class="ion-text-center"><h1><b>FT14</b></h1></ion-card-subtitle>
+             <h4 class="ion-text-center">Lemonade with juicy Lemon</h4>
+             <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+           </ion-card-header>
+   <br>
+           <ion-card-content>
+             <div class="quantity-container">
+               <ion-label><h1>Quantity:</h1></ion-label>
+               <span class="quantity-display"><h1>{{quantities[13]}}</h1></span>
+               <div class="quantity-buttons">
+                 <ion-button  fill="clear" (click)="decreaseQuantity(13)" [disabled]="quantities[13] === 0" class="icon-button">
+                   <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+                 <ion-button fill="clear" (click)="increaseQuantity(13)" class="icon-button">
+                   <ion-icon name="add-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+               </div>
+             </div>
+   <br>
+   <ion-button class="add" (click)="addToOrderList('FT14 Drink!', 13)">
+     <h3>Add</h3>
+   </ion-button>
+   
+           </ion-card-content>
+         </ion-card>
+       </ion-content>
+     </ion-tab>
+ 
+ 
+      <!--Full Description for FT15 Food-->
+      <ion-tab tab="FT15">
+       <ion-header>
+         <ion-toolbar>
+           <ion-title><ion-tab-button  tab="Drinks" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+         </ion-toolbar>
+       </ion-header>
+   
+       <ion-content>
+         <ion-card>
+   
+           <ion-tab-button>
+             <img class="Drink" alt="Silhouette of mountains" src="/assets/images/FT15.png" />
+           </ion-tab-button>
+          
+           <ion-card-header>
+             <ion-card-subtitle class="ion-text-center"><h1><b>FT15</b></h1></ion-card-subtitle>
+             <h4 class="ion-text-center">Mountain with yellow Lemons</h4>
+             <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+           </ion-card-header>
+   <br>
+           <ion-card-content>
+             <div class="quantity-container">
+               <ion-label><h1>Quantity:</h1></ion-label>
+               <span class="quantity-display"><h1>{{quantities[14]}}</h1></span>
+               <div class="quantity-buttons">
+                 <ion-button  fill="clear" (click)="decreaseQuantity(14)" [disabled]="quantities[14] === 0" class="icon-button">
+                   <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+                 <ion-button fill="clear" (click)="increaseQuantity(14)" class="icon-button">
+                   <ion-icon name="add-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+               </div>
+             </div>
+   <br>
+   <ion-button class="add" (click)="addToOrderList('FT15 Drink!', 14)">
+     <h3>Add</h3>
+   </ion-button>
+   
+           </ion-card-content>
+         </ion-card>
+       </ion-content>
+     </ion-tab>
+ 
+ 
+ 
+     
+      <!--Full Description for FT16 Food-->
+      <ion-tab tab="FT16">
+       <ion-header>
+         <ion-toolbar>
+           <ion-title><ion-tab-button  tab="Drinks" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+         </ion-toolbar>
+       </ion-header>
+   
+       <ion-content>
+         <ion-card>
+   
+           <ion-tab-button>
+             <img class="Drink" alt="Silhouette of mountains" src="/assets/images/FT16.png" />
+           </ion-tab-button>
+          
+           <ion-card-header>
+             <ion-card-subtitle class="ion-text-center"><h1><b>FT16</b></h1></ion-card-subtitle>
+             <h4 class="ion-text-center">Iced Coffee with a full of ice</h4>
+             <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+           </ion-card-header>
+   <br>
+           <ion-card-content>
+             <div class="quantity-container">
+               <ion-label><h1>Quantity:</h1></ion-label>
+               <span class="quantity-display"><h1>{{quantities[15]}}</h1></span>
+               <div class="quantity-buttons">
+                 <ion-button  fill="clear" (click)="decreaseQuantity(15)" [disabled]="quantities[15] === 0" class="icon-button">
+                   <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+                 <ion-button fill="clear" (click)="increaseQuantity(15)" class="icon-button">
+                   <ion-icon name="add-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+               </div>
+             </div>
+   <br>
+   <ion-button class="add" (click)="addToOrderList('FT16 Drink!', 15)">
+     <h3>Add</h3>
+   </ion-button>
+   
+           </ion-card-content>
+         </ion-card>
+       </ion-content>
+     </ion-tab>
+ 
+     <!--Full Description for FT17 Food-->
+     <ion-tab tab="FT17">
+       <ion-header>
+         <ion-toolbar>
+           <ion-title><ion-tab-button  tab="Desserts" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+         </ion-toolbar>
+       </ion-header>
+   
+       <ion-content>
+         <ion-card>
+   
+           <ion-tab-button>
+             <img class="FT17-des-pic" alt="Silhouette of mountains" src="/assets/images/FT17.png" />
+           </ion-tab-button>
+          
+           <ion-card-header>
+             <ion-card-subtitle class="ion-text-center"><h1><b>FT17</b></h1></ion-card-subtitle>
+             <h4 class="ion-text-center">Vanilla Ice Cream</h4>
+             <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+           </ion-card-header>
+   <br>
+           <ion-card-content>
+             <div class="quantity-container">
+               <ion-label><h1>Quantity:</h1></ion-label>
+               <span class="quantity-display"><h1>{{quantities[16]}}</h1></span>
+               <div class="quantity-buttons">
+                 <ion-button  fill="clear" (click)="decreaseQuantity(16)" [disabled]="quantities[16] === 0" class="icon-button">
+                   <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+                 <ion-button fill="clear" (click)="increaseQuantity(16)" class="icon-button">
+                   <ion-icon name="add-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+               </div>
+             </div>
+   <br>
+   <ion-button class="add" (click)="addToOrderList('FT17 Dessert!', 16)">
+     <h3>Add</h3>
+   </ion-button>
+   
+           </ion-card-content>
+         </ion-card>
+       </ion-content>
+     </ion-tab>
+ 
+ 
+     <!--Full Description for FT18 Food-->
+     <ion-tab tab="FT18">
+       <ion-header>
+         <ion-toolbar>
+           <ion-title><ion-tab-button  tab="Desserts" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+         </ion-toolbar>
+       </ion-header>
+   
+       <ion-content>
+         <ion-card>
+   
+           <ion-tab-button>
+             <img class="FT18-des-pic" alt="Silhouette of mountains" src="/assets/images/FT18.png" />
+           </ion-tab-button>
+          
+           <ion-card-header>
+             <ion-card-subtitle class="ion-text-center"><h1><b>FT18</b></h1></ion-card-subtitle>
+             <h4 class="ion-text-center">Pinoy Halo-Halo</h4>
+             <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+           </ion-card-header>
+   <br>
+           <ion-card-content>
+             <div class="quantity-container">
+               <ion-label><h1>Quantity:</h1></ion-label>
+               <span class="quantity-display"><h1>{{quantities[17]}}</h1></span>
+               <div class="quantity-buttons">
+                 <ion-button  fill="clear" (click)="decreaseQuantity(17)" [disabled]="quantities[17] === 0" class="icon-button">
+                   <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+                 <ion-button fill="clear" (click)="increaseQuantity(17)" class="icon-button">
+                   <ion-icon name="add-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+               </div>
+             </div>
+   <br>
+   <ion-button class="add" (click)="addToOrderList('FT18 Dessert!', 17)">
+     <h3>Add</h3>
+   </ion-button>
+   
+           </ion-card-content>
+         </ion-card>
+       </ion-content>
+     </ion-tab>
+   
+      <!--Full Description for FT19 Food-->
+      <ion-tab tab="FT19">
+       <ion-header>
+         <ion-toolbar>
+           <ion-title><ion-tab-button  tab="Desserts" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+         </ion-toolbar>
+       </ion-header>
+   
+       <ion-content>
+         <ion-card>
+   
+           <ion-tab-button>
+             <img class="FT19-des-pic" alt="Silhouette of mountains" src="/assets/images/FT19.png" />
+           </ion-tab-button>
+          
+           <ion-card-header>
+             <ion-card-subtitle class="ion-text-center"><h1><b>FT19</b></h1></ion-card-subtitle>
+             <h4 class="ion-text-center">Ice Cream Chocolate</h4>
+             <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+           </ion-card-header>
+   <br>
+           <ion-card-content>
+             <div class="quantity-container">
+               <ion-label><h1>Quantity:</h1></ion-label>
+               <span class="quantity-display"><h1>{{quantities[18]}}</h1></span>
+               <div class="quantity-buttons">
+                 <ion-button  fill="clear" (click)="decreaseQuantity(18)" [disabled]="quantities[18] === 0" class="icon-button">
+                   <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+                 <ion-button fill="clear" (click)="increaseQuantity(18)" class="icon-button">
+                   <ion-icon name="add-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+               </div>
+             </div>
+   <br>
+   <ion-button class="add" (click)="addToOrderList('FT19 Dessert!', 18)">
+     <h3>Add</h3>
+   </ion-button>
+   
+           </ion-card-content>
+         </ion-card>
+       </ion-content>
+     </ion-tab>
+ 
+      <!--Full Description for FT20 Food-->
+      <ion-tab tab="FT20">
+       <ion-header>
+         <ion-toolbar>
+           <ion-title><ion-tab-button  tab="Desserts" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+         </ion-toolbar>
+       </ion-header>
+   
+       <ion-content>
+         <ion-card>
+   
+           <ion-tab-button>
+             <img class="FT20-des-pic" alt="Silhouette of mountains" src="/assets/images/FT20.png" />
+           </ion-tab-button>
+          
+           <ion-card-header>
+             <ion-card-subtitle class="ion-text-center"><h1><b>FT20</b></h1></ion-card-subtitle>
+             <h4 class="ion-text-center">Ice Cream Sundae</h4>
+             <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+           </ion-card-header>
+   <br>
+           <ion-card-content>
+             <div class="quantity-container">
+               <ion-label><h1>Quantity:</h1></ion-label>
+               <span class="quantity-display"><h1>{{quantities[19]}}</h1></span>
+               <div class="quantity-buttons">
+                 <ion-button  fill="clear" (click)="decreaseQuantity(19)" [disabled]="quantities[19] === 0" class="icon-button">
+                   <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+                 <ion-button fill="clear" (click)="increaseQuantity(19)" class="icon-button">
+                   <ion-icon name="add-circle-outline" size="large"></ion-icon>
+                 </ion-button>
+               </div>
+             </div>
+   <br>
+   <ion-button class="add" (click)="addToOrderList('FT20 Dessert!', 19)">
+     <h3>Add</h3>
+   </ion-button>
+   
+           </ion-card-content>
+         </ion-card>
+       </ion-content>
+     </ion-tab>
+ 
+       <!--Full Description for FT21 Food-->
+       <ion-tab tab="FT21">
+         <ion-header>
+           <ion-toolbar>
+             <ion-title><ion-tab-button  tab="Desserts" class="icon-button-back" fill="clear" ><ion-icon name="chevron-back" class="large-icon"></ion-icon></ion-tab-button></ion-title>
+           </ion-toolbar>
+         </ion-header>
+     
+         <ion-content>
+           <ion-card>
+     
+             <ion-tab-button>
+               <img class="FT21-des-pic" alt="Silhouette of mountains" src="/assets/images/FT21.png" />
+             </ion-tab-button>
+            
+             <ion-card-header>
+               <ion-card-subtitle class="ion-text-center"><h1><b>FT21</b></h1></ion-card-subtitle>
+               <h4 class="ion-text-center">Waffles creamy</h4>
+               <ion-card-title class="ion-text-center"><h4>$1149.00</h4></ion-card-title>
+             </ion-card-header>
+     <br>
+             <ion-card-content>
+               <div class="quantity-container">
+                 <ion-label><h1>Quantity:</h1></ion-label>
+                 <span class="quantity-display"><h1>{{quantities[20]}}</h1></span>
+                 <div class="quantity-buttons">
+                   <ion-button  fill="clear" (click)="decreaseQuantity(20)" [disabled]="quantities[20] === 0" class="icon-button">
+                     <ion-icon name="remove-circle-outline" size="large"></ion-icon>
+                   </ion-button>
+                   <ion-button fill="clear" (click)="increaseQuantity(120)" class="icon-button">
+                     <ion-icon name="add-circle-outline" size="large"></ion-icon>
+                   </ion-button>
+                 </div>
+               </div>
+     <br>
+     <ion-button class="add" (click)="addToOrderList('FT21 Dessert!', 20)">
+       <h3>Add</h3>
+     </ion-button>
+     
+             </ion-card-content>
+           </ion-card>
+         </ion-content>
+       </ion-tab>
+   
+  
+ 
+   <!--Tab for Drinks-->
+   <ion-tab tab="Drinks">
+   
+ 
+     <ion-content>
+       <ion-grid>
+         <ion-row>
+           <ion-col>
+ 
+             <ion-card>
+               <ion-tab-button tab="FT12">
+                 <img alt="Silhouette of mountains" src="/assets/images/FT12.png" />
+               </ion-tab-button>
+               <ion-card-header>
+                 <ion-card-subtitle class="ion-text-center"><h6><b>FT12 Drink!</b></h6></ion-card-subtitle>
+                 <ion-card-title class="ion-text-center"><h4>$1249.00</h4></ion-card-title>
+               </ion-card-header>
+             </ion-card>
+ 
+           </ion-col>
+ 
+           <ion-col>
+ 
+             <ion-card>
+               <ion-tab-button tab="FT13">
+                 <img alt="Silhouette of mountains" src="/assets/images/FT13.png" />
+               </ion-tab-button>
+               <ion-card-header>
+                 <ion-card-subtitle class="ion-text-center"><h6><b>FT13 Drink!</b></h6></ion-card-subtitle>
+                 <ion-card-title class="ion-text-center"><h4>$1349.00</h4></ion-card-title>
+               </ion-card-header>
+             </ion-card>
+ 
+           </ion-col>
+ 
+           <ion-col>
+ 
+             <ion-card>
+               <ion-tab-button tab="FT14">
+                 <img alt="Silhouette of mountains" src="/assets/images/FT14.png" />
+               </ion-tab-button>
+               <ion-card-header>
+                 <ion-card-subtitle class="ion-text-center"><h6><b>FT14 Drink!</b></h6></ion-card-subtitle>
+                 <ion-card-title class="ion-text-center"><h4>$1449.00</h4></ion-card-title>
+               </ion-card-header>
+             </ion-card>
+ 
+           </ion-col>
+ 
+ 
+ 
+           <ion-col>
+ 
+             <ion-card>
+               <ion-tab-button tab="FT15">
+                 <img alt="Silhouette of mountains" src="/assets/images/FT15.png" />
+               </ion-tab-button>
+               <ion-card-header>
+                 <ion-card-subtitle class="ion-text-center"><h6><b>FT15 Drink!</b></h6></ion-card-subtitle>
+                 <ion-card-title class="ion-text-center"><h4>$1549.00</h4></ion-card-title>
+               </ion-card-header>
+             </ion-card>
+ 
+           </ion-col>
+ 
+ 
+ 
+           <ion-col>
+ 
+             <ion-card>
+               <ion-tab-button tab="FT16">
+                 <img alt="Silhouette of mountains" src="/assets/images/FT16.png" />
+               </ion-tab-button>
+               <ion-card-header>
+                 <ion-card-subtitle class="ion-text-center"><h6><b>FT16 Drink!</b></h6></ion-card-subtitle>
+                 <ion-card-title class="ion-text-center"><h4>$1649.00</h4></ion-card-title>
+               </ion-card-header>
+             </ion-card>
+ 
+           </ion-col>
+ 
+ 
+ 
+           <ion-col>
+ 
+           </ion-col>
+ 
+ 
+ 
+         </ion-row>
+       </ion-grid>
+     </ion-content>
+   </ion-tab>
+ 
+ 
+   <!--Tab for Dessers-->
+ <ion-tab tab="Desserts">
+  
+ 
+   <ion-content>
+     <ion-grid>
+       <ion-row>
+         <ion-col>
+ 
+           <ion-card>
+             <ion-tab-button tab="FT17">
+               <img class="FT17-pic" alt="Silhouette of mountains" src="/assets/images/FT17.png" />
+             </ion-tab-button>
+             <ion-card-header>
+               <ion-card-subtitle class="ion-text-center"><h6><b>FT17 Dessert!</b></h6></ion-card-subtitle>
+               <ion-card-title class="ion-text-center"><h4>$1749.00</h4></ion-card-title>
+             </ion-card-header>
+           </ion-card>
+ 
+         </ion-col>
+ 
+         <ion-col>
+ 
+           <ion-card>
+             <ion-tab-button tab="FT18">
+               <img alt="Silhouette of mountains" src="/assets/images/FT18.png" />
+             </ion-tab-button>
+             <ion-card-header>
+               <ion-card-subtitle class="ion-text-center"><h6><b>FT18 Dessert! </b></h6></ion-card-subtitle>
+               <ion-card-title class="ion-text-center"><h4>$1849.00</h4></ion-card-title>
+             </ion-card-header>
+           </ion-card>
+ 
+         </ion-col>
+ 
+         <ion-col>
+ 
+           <ion-card>
+             <ion-tab-button tab="FT19">
+               <img alt="Silhouette of mountains" src="/assets/images/FT19.png" />
+             </ion-tab-button>
+             <ion-card-header>
+               <ion-card-subtitle class="ion-text-center"><h6><b>FT19 Dessert!</b></h6></ion-card-subtitle>
+               <ion-card-title class="ion-text-center"><h4>$1949.00</h4></ion-card-title>
+             </ion-card-header>
+           </ion-card>
+ 
+         </ion-col>
+ 
+         <ion-col>
+ 
+           <ion-card>
+             <ion-tab-button tab="FT20">
+               <img class="FT20-pic" alt="Silhouette of mountains" src="/assets/images/FT20.png" />
+             </ion-tab-button>
+             <ion-card-header>
+               <ion-card-subtitle class="ion-text-center"><h6><b>FT20 Dessert!</b></h6></ion-card-subtitle>
+               <ion-card-title class="ion-text-center"><h4>$2049.00</h4></ion-card-title>
+             </ion-card-header>
+           </ion-card>
+ 
+         </ion-col>
+ 
+         <ion-col>
+ 
+           <ion-card>
+             <ion-tab-button tab="FT21">
+               <img alt="Silhouette of mountains" src="/assets/images/FT21.png" />
+             </ion-tab-button>
+             <ion-card-header>
+               <ion-card-subtitle class="ion-text-center"><h6><b>FT21 Dessert</b></h6></ion-card-subtitle>
+               <ion-card-title class="ion-text-center"><h4>$2149.00</h4></ion-card-title>
+             </ion-card-header>
+           </ion-card>
+ 
+         </ion-col>
+ 
+ 
+         <ion-col>
+           
+         </ion-col>
+ 
+ 
+       </ion-row>
+     </ion-grid>
+   </ion-content>
+ 
+ </ion-tab>
+ 
+ <!-- Tab for List -->
+ <!-- Tab for List -->
+ <ion-tab tab="List">
+   <ion-header>
+     <ion-buttons class="done">
+       <ion-button (click)="confirmOrder()" color="lime" [disabled]="orderList.length === 0" style="color: #35b125;"><h3>Done</h3></ion-button>
+     </ion-buttons>
+   </ion-header>
+ 
+   <ion-content>
+     <ion-list>
+       <ion-item *ngFor="let item of orderList; let i = index">
+         <ion-label>
+           <h2 class="ion-text-center">{{ item.name }}</h2>
+           <div class="item-details">
+ 
+             <div class="detail-item">
+               <span class="label">Price:</span>
+               <span class="value">${{ item.price }}</span>
+             </div>
+             <div class="detail-item">
+               <span class="label">Quantity:</span>
+               <span class="value">{{ item.quantity }}</span>
+             </div>
+ 
+             <div class="detail-item">
+               <span class="label">Total Price:</span>
+               <span class="value">{{ item.totalPrice }}</span>
+             </div>
+ 
+           </div>
+   
+           <!-- Display total of all orders only in the last item -->
+           <div *ngIf="i === orderList.length - 1" class="total-order-price" style="text-align: center; padding-top: 20px; font-weight: bold; color: red;">
+             <span>Total of All Orders: ${{ getTotalPrice() }}</span>
+           </div>
+         </ion-label>
+   
+         <ion-button slot="end" fill="clear" color="danger" (click)="confirmDeleteItem(i)">
+           <ion-icon name="trash"></ion-icon>
+         </ion-button>
+       </ion-item>
+     </ion-list>
+   
+     
+   </ion-content>
+   
+ </ion-tab>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    <!-- List-Tab -->
+ 
+ 
+ 
+ 
+ 
+ 
+ <!--This is the bottom tab bar all icon in the bottom-->
+   <ion-tab-bar slot="bottom">
+ 
+     <ion-tab-button tab="combo-tab">
+       <ion-icon style="color: #EAD8B1;" name="restaurant"></ion-icon>
+       <span>Foods</span>
+     </ion-tab-button>
+   
+     <ion-tab-button tab="Drinks">
+       <ion-icon style="color: #3A6D8C;" name="wine"></ion-icon>
+       <span>Drinks</span>
+     </ion-tab-button>
+   
+     <ion-tab-button tab="Desserts">
+       <ion-icon style="color: #6A9AB0;" name="ice-cream"></ion-icon>
+       <span>Desserts</span>
+     </ion-tab-button>
+   
+     <ion-tab-button tab="List">
+       <ion-icon style="color:#35b125;" name="list"></ion-icon>
+       <span>Orders</span>
+     </ion-tab-button>
+ 
+     <ion-tab-button (click)="confirmLogout()">
+       <ion-icon style="color:#eb445a;" name="exit"></ion-icon>
+       <span>Log-out</span>
+     </ion-tab-button>
+   
+   </ion-tab-bar>
+   
+ </ion-tabs>

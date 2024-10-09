@@ -8,8 +8,28 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'starting',
     pathMatch: 'full'
+  },
+  {
+    path: 'admin-dashboard',
+    loadChildren: () => import('./admin-dashboard/admin-dashboard.module').then( m => m.AdminDashboardPageModule)
+  },
+  {
+    path: 'admin-login',
+    loadChildren: () => import('./admin-login/admin-login.module').then( m => m.AdminLoginPageModule)
+  },
+  {
+    path: 'admin-customer',
+    loadChildren: () => import('./admin-customer/admin-customer.module').then( m => m.AdminCustomerPageModule)
+  },
+  {
+    path: 'customer-dashboard',
+    loadChildren: () => import('./customer-dashboard/customer-dashboard.module').then( m => m.CustomerDashboardPageModule)
+  },
+  {
+    path: 'starting',
+    loadChildren: () => import('./starting/starting.module').then( m => m.StartingPageModule)
   },
 ];
 

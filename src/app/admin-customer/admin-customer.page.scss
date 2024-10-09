@@ -1,0 +1,46 @@
+ion-tab {
+    --background: none;
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  
+  ion-button{
+  padding: 40px;
+  
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 80vh;            
+  }
+  
+  .admin-button {
+    --background:#001F3F; 
+    --color: #ffffff; 
+    margin-bottom: 200px;
+   
+  }
+  
+  .customer-button {
+    --background:#EAD8B1; 
+    --color: black; 
+    margin-top: -250px;
+    margin-bottom: 200px;
+  }
+  
+  
+  
+  ion-icon {
+    margin-right: 8px;
+  }
+  
+  ion-spinner {
+    width: 100px;
+    height: 100px;
+    animation-duration: 3s;
+  }

@@ -1,0 +1,20 @@
+<ion-tabs>
+
+  <ion-tab tab="customer-admin">
+
+   <img alt="Silhouette of mountains" src="../assets/images/logo.png" />
+
+   <ion-button [routerLink]="['/admin-login']" shape ="round" class="admin-button" expand="full">
+     <ion-icon name="person" slot="start"></ion-icon>
+     Admin
+   </ion-button>
+   <ion-loading trigger="open-loading" message="Dismissing after 3 seconds..." duration="3000"></ion-loading>
+  
+   <ion-button shape ="round" class="customer-button" [routerLink]="['/customer-dashboard']" expand="full">
+     <ion-icon name="people" slot="start"></ion-icon>
+     Customer
+   </ion-button>
+
+ </ion-tab>
+
+</ion-tabs>

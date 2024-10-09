@@ -1,0 +1,208 @@
+ion-content{
+    --background:none;
+    background-color: #001F3F;
+}
+.single{
+  width: 55px;
+  color: black;
+  font-size: large;
+  
+}
+.combo{
+  width: 60px;
+  color: black ;
+  font-size: large;
+}
+.underline {
+  text-decoration: underline;
+  position: relative; /* Necessary to position the underline */
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Adjust this value to move the underline closer or further from the text */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Adjust thickness of the underline */
+  /* Underline color */
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 105%; /* Ensure full width for space-between */
+  padding: 0 16px; /* Optional: Add padding if needed */
+  margin-left: -10px;
+}
+
+h4{
+    color: black;
+}
+h5{
+  color: #000;
+}
+h6{
+    color: black;
+}
+
+.done{
+  color: White;
+}
+.add{
+    background-color: #001F3F;
+}
+
+ion-card{
+    border-radius: 20px;
+    background-color:#EAD8B1;
+}
+
+.large-icon {
+   font-size: 30px;
+  }
+
+.icon-button-back{
+    display: flex;
+    margin-left: -24%;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0; /* Adjusts the space between label, display, and buttons */
+    color: black;
+  }
+
+  .quantity-display h1 {
+    margin: 0;
+    font-size: 1.6em;
+    text-align: center;
+    min-width: 40px; /* Ensures quantity display is centered */
+  }
+
+  .quantity-buttons {
+    display: flex;
+    gap: 2px; /* Tightens the space between the + and - buttons */
+  }
+
+  .icon-button {
+    padding: -10%; /* Removes button padding */
+    margin: -15px; /* Removes button margin */
+    color: black;
+  }
+
+  ion-button {
+    display: flex;
+    align-items: center;
+  }
+
+.FT1-pic{
+  margin-top: 41px;
+}
+
+  .FT2-pic{
+       margin-top: 53px;
+  }
+  
+  .FT3-pic{
+    margin-top: 44px;
+  }
+
+  .FT4-pic{
+    margin-top: 41px;
+  }
+
+  .FT5-pic{
+    margin-top: 43px;
+  }
+
+  .FT8-pic{
+    margin-top: 28px;
+}
+
+.FT9-pic{
+margin-top: 47px;
+
+}
+
+.FT17-pic{
+  margin-top: 3px;
+}
+
+.FT10-pic{
+  margin-top: 40px;
+}
+
+
+.FT17-des-pic{
+  width: 230px;
+}
+.FT18-des-pic{
+  width: 230px;
+}
+.FT19-des-pic{
+  width: 230px;
+}
+.FT20-des-pic{
+  width: 230px;
+}
+.FT21-des-pic{
+  width: 230px;
+}
+  h1{
+    color: black;
+  }
+
+
+  .done{
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+ 
+  .item-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+
+
+  .detail-item {
+    display: flex;
+    justify-content: space-between; /* Space between label and value */
+    padding: 5px 0; /* Adjust vertical spacing */
+  }
+
+  
+  .detail-item span {
+    flex: 1; /* Allow labels and values to grow */
+  }
+  
+  .detail-item span:first-child {
+    text-align: left; /* Align labels to the left */
+  }
+  
+  .detail-item span:last-child {
+    text-align: right; /* Align values to the right */
+  }
+  
+
+  .total-order-price{
+    text-align: center;
+    margin-left: 45px
+  }
+
+.Drink{
+  width: 230px;
+}
+.combo{
+  color: white;
+  font-size: 25px
+}
+.single{
+  color: white;
+  font-size: 25px
+}

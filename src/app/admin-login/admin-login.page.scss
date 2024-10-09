@@ -1,0 +1,66 @@
+.login-content {
+    --background:none;
+    background-color: #001F3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background:#EAD8B1;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .login-container:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker text for better readability */
+  }
+  
+  ion-item {
+    margin-bottom: 15px; /* Spacing between items */
+    border-radius: 10px;
+    background-color: #001F3F; /* Updated ion-item color to #001F3F */
+  }
+  
+  ion-input {
+    border-radius: 8px; /* Rounded inputs */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  }
+  
+  ion-button {
+    margin-top: 20px;
+    border-radius: 8px; /* Rounded button */
+    background-color: #001F3F; /* Updated button color to #6A9AB0 */
+    color: white; /* White text on button */
+    font-weight: bold; /* Bolder text for emphasis */
+  }
+  
+  ion-button:hover {
+    background-color: #4A7A90; /* Optional: Darker shade on hover for button */
+  }
+  
+  ion-card{
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: -140px;
+  
+    
+  }
+  ion-icon{
+    font-size: 30px;
+  }
+  
+  .back{
+    display: none;
+  }
